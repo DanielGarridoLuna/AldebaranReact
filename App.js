@@ -8,8 +8,15 @@ import SRread from './Pantallas/SRread'
 
 const styles = StyleSheet.create({
   Boton: {
-    backgroundColor: '#FF0000',
-    width:500,
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    borderRadius: 4,
+    backgroundColor: "oldlace",
+    alignSelf: "flex-start",
+    marginHorizontal: "1%",
+    marginBottom: 6,
+    minWidth: "48%",
+    textAlign: "center",
   },
 });
 
@@ -19,9 +26,9 @@ function HomeScreen({ navigation }) {
     <View style={{ flex:1, justifyContent: 'space-evenly',}}>
     
       <Button
-        style={styles.Boton}
+   
         title="Leer Información"
-        
+    
         onPress={() => navigation.navigate('Leer')}
       />
 

@@ -4,8 +4,6 @@ import { db } from '../Server/conexion';
 import { collection, getDocs } from "firebase/firestore";
 
 const SRread = () => {
-
-
   async function leer(){
     const querySnapshot = await getDocs(collection(db, "Productos"));
 
